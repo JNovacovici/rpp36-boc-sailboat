@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --coverage",
     "start": "nodemon server/index.js",
-    "webpack": "webpack --mode development -w",
+    "webpack": "webpack --mode production -w",
     "webpack_CI": "webpack --mode development"
   },
   "repository": {

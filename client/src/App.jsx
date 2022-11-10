@@ -20,6 +20,7 @@ import Navbar from "./Components/Navbar/Nav.jsx";
 import Landing from "./Components/Landing.jsx";
 
 Modal.setAppElement("#app");
+console.warn = console.error = () => {};
 
 class App extends React.Component {
   constructor(props) {
@@ -293,8 +294,8 @@ class App extends React.Component {
       url: '/auth/signout',
     })
     .then((res) => {
-      this.setState({ user: guestUser});
       localStorage.clear();
+      this.setState({ user: guestUser});
     })
     .catch((err) => {
       this.setState({ guestUser });

@@ -50,8 +50,8 @@ describe('Task List and related features', () => {
         configure({testIdAttribute: 'id'});
         expect(screen.getByTestId('singleTodoTest')).toBeInTheDocument();
         expect(screen.getByText('Buy water')).toBeInTheDocument();
-        expect(screen.getByTestId('singleTodoTest')).toHaveStyle(`background: black`);
-        expect(screen.getByTestId('singleTodoTest')).toHaveStyle(`color: white`);
+        expect(screen.getByTestId('singleTodoTest')).toHaveStyle(`color: black`);
+        // expect(screen.getByTestId('singleTodoTest')).toHaveStyle(`text: white`);
     });
   });
 
